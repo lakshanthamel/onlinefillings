@@ -118,6 +118,7 @@ export default {
         }));
     },
 
+    // validation for id
     validationIdOnly(){
         return validate(checkSchema({
             id: {
@@ -135,6 +136,7 @@ export default {
         }));
     },
 
+    // validation for status
     taskValidationStatusOnly(){
         return validate(checkSchema({
             status: {
@@ -154,6 +156,8 @@ export default {
         }));
     },
 
+
+    // validation for name
     validationNameOnly(){
         return validate(checkSchema({
             name: {
@@ -171,6 +175,7 @@ export default {
         }));
     },
 
+    // validation for dates
     validationDatesOnly(all){
         if(all === undefined){
             all = true;
@@ -220,6 +225,7 @@ export default {
         }));
     },
 
+    // project validation
     projectValidations(idCheck){
         if(idCheck === undefined){
             idCheck = true;
@@ -288,6 +294,8 @@ export default {
         }));
     },
 
+
+    // validation for project id and task id
     validationIdsOnly(){
         return validate(checkSchema({
             projectId: {

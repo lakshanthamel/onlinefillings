@@ -52,7 +52,7 @@ export default {
                 },{
                     $set: {
                         "name": req.body.name?req.body.name:project.name,
-                        "status": req.body.status?req.body.status:project.status,
+                        "due_date": req.body.due_date?req.body.due_date:project.due_date,
                         "start_date": req.body.start_date?req.body.start_date:project.start_date,
                     }
                 });
